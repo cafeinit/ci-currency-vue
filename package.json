@@ -1,0 +1,40 @@
+{
+  "name": "ci-currency",
+  "version": "0.0.1",
+  "description": "CafeInit Currency for VueJS",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cafeinit/ci-currency.git"
+  },
+  "keywords": [
+    "CafeInit",
+    "CSS",
+    "Vue"
+  ],
+  "author": "burning",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/cafeinit/ci-currency/issues"
+  },
+  "homepage": "https://github.com/cafeinit/ci-currency#readme",
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-latest": "^6.0.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.2.0",
+    "gulp-less": "^3.3.0",
+    "less-plugin-autoprefix": "^1.5.1",
+    "pug": "^2.0.0-rc.2",
+    "vue-loader": "^11.1.4",
+    "vue-template-compiler": "^2.2.1",
+    "webpack": "^2.2.0"
+  }
+}
