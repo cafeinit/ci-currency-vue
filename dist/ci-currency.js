@@ -212,9 +212,9 @@ module.exports = function normalizeComponent (
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('span', {
     staticClass: "ci-currency"
-  }, [_c('i', {
+  }, [(_vm.symbol) ? _c('i', {
     staticClass: "ci-currency__symbol"
-  }), _c('strong', [_vm._v(_vm._s(_vm.currency[0])), _c('small', [_vm._v("." + _vm._s(_vm.currency[1]))])])])
+  }, [_vm._v(_vm._s(_vm.symbol))]) : _vm._e(), _c('strong', [_vm._v(_vm._s(_vm.currency[0])), _c('small', [_vm._v("." + _vm._s(_vm.currency[1]))])])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {

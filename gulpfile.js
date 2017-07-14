@@ -8,7 +8,6 @@
 
 const gulp = require('gulp')
 const cleanCSS = require('gulp-clean-css')
-const header = require('gulp-header')
 const less = require('gulp-less')
 const LessAutoprefix = require('less-plugin-autoprefix')
 
