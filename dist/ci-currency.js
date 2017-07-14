@@ -1,4 +1,4 @@
-/******/ (function(modules) { // webpackBootstrap
+define("CICurrency", [], function() { return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -213,8 +213,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('span', {
     staticClass: "ci-currency"
   }, [(_vm.symbol) ? _c('i', {
-    staticClass: "ci-currency__symbol"
-  }, [_vm._v(_vm._s(_vm.symbol))]) : _vm._e(), _c('strong', [_vm._v(_vm._s(_vm.currency[0])), _c('small', [_vm._v("." + _vm._s(_vm.currency[1]))])])])
+    staticClass: "ci-currency__symbol",
+    domProps: {
+      "innerHTML": _vm._s(_vm.symbol)
+    }
+  }) : _vm._e(), _c('strong', [_vm._v(_vm._s(_vm.currency[0])), _c('small', [_vm._v("." + _vm._s(_vm.currency[1]))])])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -240,10 +243,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-const plug = function (Vue) {
-  Vue.component(__WEBPACK_IMPORTED_MODULE_0__CICurrency_vue___default.a.name, __WEBPACK_IMPORTED_MODULE_0__CICurrency_vue___default.a)
-}
-
 __WEBPACK_IMPORTED_MODULE_0__CICurrency_vue___default.a.plug = plug
 
 if (window.Vue) {
@@ -252,6 +251,10 @@ if (window.Vue) {
 
 /* harmony default export */ __webpack_exports__["default"] = (__WEBPACK_IMPORTED_MODULE_0__CICurrency_vue___default.a);
 
+function plug(Vue) {
+  Vue.component(__WEBPACK_IMPORTED_MODULE_0__CICurrency_vue___default.a.name, __WEBPACK_IMPORTED_MODULE_0__CICurrency_vue___default.a)
+}
+
 
 /***/ })
-/******/ ]);
+/******/ ])});;

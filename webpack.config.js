@@ -14,7 +14,10 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: '[name].js'
+    filename: '[name].js',
+    library: 'CICurrency',
+    libraryTarget: 'amd'  // Export to AMD (optionally named - set the name via the library option)
+    // libraryTarget: 'umd'  // Export to AMD, CommonJS2 or as property in root
   },
 
   module: {

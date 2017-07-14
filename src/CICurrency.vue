@@ -1,6 +1,6 @@
 <template lang="pug">
   span.ci-currency
-    i(v-if="symbol").ci-currency__symbol {{symbol}}
+    i(v-if="symbol" v-html="symbol").ci-currency__symbol
     strong {{currency[0]}}
       small .{{currency[1]}}
 </template>

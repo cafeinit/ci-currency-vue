@@ -6,10 +6,6 @@
 
 import CICurrency from './CICurrency.vue'
 
-const plug = function (Vue) {
-  Vue.component(CICurrency.name, CICurrency)
-}
-
 CICurrency.plug = plug
 
 if (window.Vue) {
@@ -17,3 +13,7 @@ if (window.Vue) {
 }
 
 export default CICurrency
+
+function plug(Vue) {
+  Vue.component(CICurrency.name, CICurrency)
+}
