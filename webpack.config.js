@@ -1,11 +1,11 @@
 /**
  * @fileoverview webapck
  * @author burning (www.cafeinit.com)
- * @version 2017.07.14
+ * @version 2017.07.15
  */
 
 const path = require('path')
-// const webpack = require('webpack')
+const webpack = require('webpack')
 
 module.exports = {
   entry: {
@@ -33,5 +33,16 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
+    }),
+    new webpack.LoaderOptionsPlugin({
+      minimize: true
+    })
+  ]
 }

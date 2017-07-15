@@ -1,6 +1,6 @@
 {
   "name": "ci-currency-vue",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "CafeInit Currency for VueJS",
   "main": "./dist/ci-currency.js",
   "scripts": {
