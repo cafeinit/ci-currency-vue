@@ -4,7 +4,10 @@
   "description": "CafeInit Currency for VueJS",
   "main": "./dist/ci-currency.js",
   "scripts": {
-    "build": "gulp && webpack",
+    "build": "gulp && npm run build:amd && npm run build:var",
+    "build:amd": "webpack --config ./webpack.config.amd.js",
+    "build:var": "webpack --config ./webpack.config.js",
+    "start": "http-server ./example -p 8080",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

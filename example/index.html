@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CICurrency</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="./ci-currency.css" />
+</head>
+
+<body>
+<div id="app">
+  <ul>
+    <li>Price: <ci-currency :amount="price"></ci-currency></li>
+    <li>Original Price: <ci-currency :amount="21.99"></ci-currency></li>
+  </ul>
+</div>
+
+<script src="./node_modules/vue/dist/vue.min.js"></script>
+<script src="./ci-currency.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>

@@ -1,5 +1,4 @@
-var CICurrency =
-/******/ (function(modules) { // webpackBootstrap
+define("CICurrency", [], function() { return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -258,4 +257,4 @@ function plug(Vue) {
 
 
 /***/ })
-/******/ ]);
+/******/ ])});;
